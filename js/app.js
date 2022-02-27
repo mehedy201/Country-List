@@ -5,6 +5,7 @@ const loadCountryData = () =>{
         .then(data => singleCountryObject(data));
 }
 loadCountryData();
+
 // Get Single Country Object and show in DOM
 const singleCountryObject = countrys =>{
     const countryAreaDom = document.getElementById('countrys-area');
@@ -26,6 +27,7 @@ const singleCountryObject = countrys =>{
         countryAreaDom.appendChild(div);
     });
 };
+
 // Get single country for modal
 const singleCountryForModal = country => {
     // console.log(country);
@@ -55,4 +57,17 @@ const pushCountryInModal = country => {
     title.innerText = country.name.common;
     body.appendChild(div);
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
 
