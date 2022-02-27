@@ -57,17 +57,3 @@ const pushCountryInModal = country => {
     title.innerText = country.name.common;
     body.appendChild(div);
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
