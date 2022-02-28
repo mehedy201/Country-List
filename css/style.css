@@ -2,10 +2,18 @@
 *{
     margin: 0;
     padding: 0;
+    background-color: #dde1e7;
 }
 /* Header  */
 .heder-text{
+    margin: 0;
+    padding-top: 1em;
+    padding-bottom: 4em;
     font-family: cursive;
+}
+.header-title{
+    text-shadow: -5px -5px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, .288);
+    margin-top: 50px;
 }
 /* Country Grid Style  */
 .grid{
@@ -15,36 +23,52 @@
 }
 .about-country{
     display: flex;
-    border: 1px solid #ffc107;
+    /* justify-content: space-around; */
     border-radius: 10px;
     align-items: center;
-    padding: 4px;
+    padding: 10px;
     transition: 0.5s;
+    box-shadow: -5px -5px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, .288);
+    position: relative;
+    overflow: hidden;
+    
 }
 .about-country:hover{
     transform: translateY(-5px);
     box-shadow: 1px 1px 1px gray;
     border: none;
 }
+.country-image{
+    flex: 1;
+}
 .country-image img{
-    height: 150px;
-    width: 220px;
+    height: 100%;
+    width: 200px;
     padding-right: 10px;
     border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0; 
+}
+.country-text{
+    flex: 1;
+    padding-left: 50px;
 }
 .country-text .capital{
     margin-bottom: 0;
     font-size: 13px;
     font-weight: bold;
+    
 }
 .country-text button{
-    background-color: white;
-    border: 1px solid #ffc107;
+    box-shadow: inset -5px -5px 7px #ffffff, inset 3px 3px 5px rgba(94, 104, 121, .288);
     padding: 2px 10px;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 2.5s;
+    transform: 0.5s;
+    border: none;
 }
 .country-text button:hover{
-    background-color: #ffc107;
-    color: white;
+    box-shadow:  -5px -5px 7px #ffffff, 3px 3px 5px rgba(94, 104, 121, .288);
+    transition: 1.5s;
 }
